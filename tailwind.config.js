@@ -32,9 +32,24 @@ export default {
           "0%, 49%": { opacity: "1" },
           "50%, 100%": { opacity: "0" },
         },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        scan: {
+          "0%": { transform: "translateX(-120%)" },
+          "100%": { transform: "translateX(220%)" },
+        },
+        "toast-in": {
+          "0%": { transform: "translateY(150%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
       },
       animation: {
         blink: "blink 1s steps(1) infinite",
+        marquee: "marquee 30s linear infinite",
+        scan: "scan 1.8s linear infinite",
+        "toast-in": "toast-in 240ms cubic-bezier(0.2, 0.8, 0.2, 1) both",
       },
     },
   },

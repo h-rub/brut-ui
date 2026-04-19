@@ -1,5 +1,8 @@
 import { TopBar } from "./components/TopBar";
 import { NavBar } from "./components/NavBar";
+import { BackToTop } from "./components/BackToTop";
+import { CommandPalette } from "./components/CommandPalette";
+import { TocSidebar } from "./components/TocSidebar";
 import { Hero } from "./sections/Hero";
 import { Pillars } from "./sections/Pillars";
 import { Tokens } from "./sections/Tokens";
@@ -13,6 +16,7 @@ export function App() {
     <div className="min-h-screen text-ink">
       <TopBar />
       <NavBar />
+      <TocSidebar />
       <main>
         <Hero />
         <Pillars />
@@ -22,6 +26,8 @@ export function App() {
         <Principles />
       </main>
       <Footer />
+      <CommandPalette />
+      <BackToTop />
     </div>
   );
 }
